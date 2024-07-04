@@ -13,7 +13,7 @@ def mask_account_card(account_info: str) -> str:
         return mask_card
 
 
-print(mask_account_card("Maestro 1596837868705199"))
+
 
 
 def get_data(data: str) -> str:
@@ -22,5 +22,3 @@ def get_data(data: str) -> str:
     return result
 
 
-data = "2018-07-11T02:26:18.671407"
-print(get_data(data))
