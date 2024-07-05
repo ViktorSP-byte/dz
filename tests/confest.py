@@ -1,4 +1,4 @@
-
+import pytest
 
 from src.processing import state_inform
 
@@ -9,5 +9,5 @@ def test_info_state() -> str:
 
 
 @pytest.fixture
-def test_info_state_1() -> list[dict[str, object]]:
+def test_info_state_1() -> list[dict]:
     return state_inform

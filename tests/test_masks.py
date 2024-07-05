@@ -10,8 +10,9 @@ from src.masks import get_mask_account, get_mask_card_number
         ("7158300734726759", "7158 30** **** 6759"),
     ],
 )
-def test_get_mask_card_number(string, expected_result):
+def test_get_mask_card_number(string: str, expected_result: str) -> str:
     assert get_mask_card_number(string) == expected_result
+    return expected_result
 
 
 @pytest.mark.parametrize(
@@ -21,5 +22,6 @@ def test_get_mask_card_number(string, expected_result):
         ("12345678901234567890", "**7890"),
     ],
 )
-def test_get_mask_account(string, expected_result):
+def test_get_mask_account(string: str, expected_result: str) -> str:
     assert get_mask_account(string) == expected_result
+    return expected_result

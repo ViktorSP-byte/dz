@@ -10,14 +10,16 @@ from src.widget import get_data, mask_account_card
         ("Счет 12345678901234567890", "Счет **7890"),
     ],
 )
-def test_mask_account_card(string, expected_result):
+def test_mask_account_card(string: str, expected_result: str) -> str:
     assert mask_account_card(string) == expected_result
+    return expected_result
 
 
 @pytest.fixture
-def date():
+def date() -> str:
     return "2018-07-11T02:26:18.671407"
 
 
-def test_get_data(date):
+def test_get_data(date: str) -> str:
     assert get_data(date) == "11.07.2018"
+    return "11.07.2018"

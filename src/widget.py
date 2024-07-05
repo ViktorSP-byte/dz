@@ -13,12 +13,7 @@ def mask_account_card(account_info: str) -> str:
         return mask_card
 
 
-
-
-
 def get_data(data: str) -> str:
     """Функция, меняющая формат даты"""
     result = data[8:10] + "." + data[5:7] + "." + data[:4]
     return result
-
-

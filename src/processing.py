@@ -15,13 +15,7 @@ def filter_by_state(data: list[dict], state_inform: str = "EXECUTED") -> list[di
     return new_data
 
 
-
-
-
 def sort_by_date(data: list[dict], reverse: bool = True) -> list[dict]:
     """Фунуия сортировки операций по дате"""
     sorted_data = sorted(data, key=lambda data: data["date"], reverse=reverse)
     return sorted_data
-
-
-
