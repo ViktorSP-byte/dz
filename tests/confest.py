@@ -1,6 +1,8 @@
+from typing import Any
+
 import pytest
 
-from src.processing import state_inform
+from src.processing import data
 
 
 @pytest.fixture
@@ -9,5 +11,5 @@ def test_info_state() -> str:
 
 
 @pytest.fixture
-def test_info_state_1() -> list[dict]:
-    return state_inform
+def test_info_state_1() -> list[dict[Any, Any]]:
+    return data
